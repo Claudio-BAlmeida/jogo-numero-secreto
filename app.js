@@ -1,13 +1,13 @@
 let listaDeNumerosSorteados = [];
-let numeroMaximo = 4
+let numeroMaximo = 50
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
 function gerarNumeroAleatorio() {
     let numeroEscolhido = parseInt(Math.random() * numeroMaximo + 1);
-    let quantidadeElementosLista = listaDeNumerosSorteados.length;
+    let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length;
 
-    if (quantidadeElementosLista == numeroMaximo) {
+    if (quantidadeDeElementosNaLista == numeroMaximo) {
         listaDeNumerosSorteados = [];
     }
     if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
